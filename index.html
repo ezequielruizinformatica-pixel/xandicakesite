@@ -5,261 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xandi Cake</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-
-    body{
-      margin:0;
-      font-family:'Poppins', sans-serif;
-      background:#fff5f7;
-      color:#5c3b3b;
-    }
-
-    header{
-      background:#ffdce5;
-      padding:40px 20px;
-      text-align:center;
-      box-shadow:0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    header h1{
-      color:#ff5c8a;
-      font-size:55px;
-      margin:0;
-      font-weight:700;
-    }
-
-    header p{
-      margin-top:10px;
-      color:#a85b72;
-      font-size:18px;
-    }
-
-    .hero{
-      text-align:center;
-      padding:70px 20px;
-    }
-
-    .hero h2{
-      font-size:45px;
-      color:#ff5c8a;
-      max-width:700px;
-      margin:auto;
-      line-height:1.2;
-    }
-
-    .hero p{
-      font-size:20px;
-      max-width:700px;
-      margin:25px auto;
-      color:#7a5a5a;
-      line-height:1.6;
-    }
-
-    .botao{
-      display:inline-block;
-      margin-top:25px;
-      background:#ff5c8a;
-      color:white;
-      padding:16px 35px;
-      border-radius:50px;
-      text-decoration:none;
-      font-weight:600;
-      box-shadow:0 8px 20px rgba(255,92,138,0.3);
-      transition:0.3s;
-    }
-
-    .botao:hover{
-      background:#ff3f75;
-      transform:scale(1.05);
-    }
-
-    .sabores{
-      padding:60px 20px;
-      text-align:center;
-    }
-
-    .sabores h2{
-      color:#ff5c8a;
-      font-size:40px;
-      margin-bottom:40px;
-    }
-
-    .cards{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:25px;
-    }
-
-    .card{
-      background:white;
-      width:260px;
-      padding:20px;
-      border-radius:25px;
-      box-shadow:0 10px 25px rgba(255,92,138,0.15);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
-    }
-
-    .card img{
-      width:100%;
-      border-radius:20px;
-      margin-bottom:15px;
-      height:220px;
-      object-fit:cover;
-    }
-
-    .card h3{
-      color:#ff5c8a;
-      font-size:22px;
-      margin-bottom:10px;
-    }
-
-    .card p{
-      color:#7a5a5a;
-      font-size:18px;
-      font-weight:500;
-    }
-
-    footer{
-      background:#ffdce5;
-      text-align:center;
-      padding:35px 20px;
-      margin-top:60px;
-    }
-
-    footer h2{
-      color:#ff5c8a;
-      margin-bottom:10px;
-    }
-
-    footer p{
-      color:#7a5a5a;
-    }
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25d366;
-  width:65px;
-  height:65px;
-  border-radius:50%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  box-shadow:0 8px 20px rgba(0,0,0,0.2);
-  z-index:999;
-  transition:0.3s;
-}
-
-.whatsapp:hover{
-  transform:scale(1.1);
-}
-
-.whatsapp img{
-  width:38px;
-}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  <h1>Xandi Cake</h1>
-  <p>Feito com amor em cada detalhe 💖</p>
-</header>
+  <header class="navbar">
+    <div class="logo">
+      <h1>Xandi</h1>
+      <span>CAKE</span>
+    </div>
 
-<section class="hero">
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Sabores</a>
+      <a href="#">Contato</a>
+    </nav>
 
-  <h2>Mini vulcões feitos para você se apaixonar 🍰</h2>
+    <a class="btn" href="#">
+      Fazer Pedido
+    </a>
+  </header>
 
-  <p>
-    Deliciosos mini vulcões artesanais com muito recheio,
-    cobertura cremosa e sabor inesquecível ✨
-  </p>
+  <section class="hero">
 
-  <a class="botao" href="https://wa.me/5592992902595">
-    Fazer Pedido
-  </a>
+    <div class="hero-text">
+      <h2>
+        Mini vulcões feitos para você se apaixonar!
+      </h2>
 
-</section>
+      <p>
+        Deliciosos mini vulcões artesanais com muito recheio,
+        cobertura cremosa e sabor inesquecível.
+      </p>
 
-<section class="sabores">
+      <a class="btn" href="#">
+        Fazer Pedido
+      </a>
+    </div>
 
-  <h2>Nossos Sabores ✨</h2>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="">
+    </div>
 
-  <div class="cards">
+  </section>
 
-    <div class="card">
+  <section class="sabores">
 
-      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop">
+    <div class="title">
+      <h3>Nossos Sabores</h3>
+      <p>Feitos com amor em cada detalhe</p>
+    </div>
 
-      <h3>Cenoura com Brigadeiro</h3>
+    <div class="cards">
 
-      <p>R$ 12,00</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop">
+
+        <h4>Cenoura com Brigadeiro</h4>
+
+        <p>
+          Massa fofinha com muito recheio.
+        </p>
+
+        <span>R$ 12,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1200&auto=format&fit=crop">
+
+        <h4>Chocolate com Ninho</h4>
+
+        <p>
+          Chocolate cremoso e delicioso.
+        </p>
+
+        <span>R$ 14,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+
+        <h4>Chocolate Vulcão</h4>
+
+        <p>
+          Cobertura cremosa e muito sabor.
+        </p>
+
+        <span>R$ 13,00</span>
+      </div>
 
     </div>
 
-    <div class="card">
+  </section>
 
-      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+  <section class="sobre">
 
-      <h3>Chocolate com Brigadeiro</h3>
-
-      <p>R$ 13,00</p>
-
-    </div>
-
-    <div class="card">
-
+    <div class="sobre-img">
       <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop">
-
-      <h3>Chocolate com Leite Ninho</h3>
-
-      <p>R$ 14,00</p>
-
     </div>
 
-    <div class="card">
+    <div class="sobre-text">
+      <h3>Sobre a Xandi Cake</h3>
 
-      <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?q=80&w=1200&auto=format&fit=crop">
+      <p>
+        A Xandi Cake nasceu do amor pela confeitaria e da vontade
+        de transformar pequenos momentos em experiências inesquecíveis.
+      </p>
 
-      <h3>Massa Branca com Brigadeiro</h3>
-
-      <p>R$ 12,00</p>
-
+      <a class="btn" href="#">
+        Saiba Mais
+      </a>
     </div>
 
-    <div class="card">
+  </section>
 
-      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop">
+  <footer>
 
-      <h3>Massa Branca com Leite Ninho</h3>
+    <h2>Xandi Cake</h2>
 
-      <p>R$ 13,00</p>
+    <p>
+      Pequenos momentos, grandes sabores!
+    </p>
 
-    </div>
+  </footer>
 
-  </div>
-
-</section>
-
-<footer>
-
-  <h2>@xandicake</h2>
-
-  <p>WhatsApp: (92) 99290-2595</p>
-
-</footer>
-<a class="whatsapp" href="https://wa.me/5592992902595" target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
-</a>
 </body>
 </html>
