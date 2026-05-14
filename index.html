@@ -5,45 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xandi Cake</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+
     body{
       margin:0;
-      font-family: Arial, sans-serif;
+      font-family:'Poppins', sans-serif;
       background:#fff5f7;
       color:#5c3b3b;
     }
 
     header{
       background:#ffdce5;
-      padding:30px;
+      padding:40px 20px;
       text-align:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
     }
 
     header h1{
       color:#ff5c8a;
-      font-size:50px;
+      font-size:55px;
       margin:0;
+      font-weight:700;
     }
 
     header p{
       margin-top:10px;
       color:#a85b72;
+      font-size:18px;
     }
 
     .hero{
       text-align:center;
-      padding:50px 20px;
+      padding:70px 20px;
     }
 
     .hero h2{
-      font-size:40px;
+      font-size:45px;
       color:#ff5c8a;
+      max-width:700px;
+      margin:auto;
+      line-height:1.2;
     }
 
     .hero p{
       font-size:20px;
       max-width:700px;
-      margin:auto;
+      margin:25px auto;
+      color:#7a5a5a;
+      line-height:1.6;
     }
 
     .botao{
@@ -51,43 +62,86 @@
       margin-top:25px;
       background:#ff5c8a;
       color:white;
-      padding:15px 30px;
-      border-radius:40px;
+      padding:16px 35px;
+      border-radius:50px;
       text-decoration:none;
-      font-weight:bold;
+      font-weight:600;
+      box-shadow:0 8px 20px rgba(255,92,138,0.3);
+      transition:0.3s;
+    }
+
+    .botao:hover{
+      background:#ff3f75;
+      transform:scale(1.05);
     }
 
     .sabores{
-      padding:50px 20px;
+      padding:60px 20px;
       text-align:center;
+    }
+
+    .sabores h2{
+      color:#ff5c8a;
+      font-size:40px;
+      margin-bottom:40px;
     }
 
     .cards{
       display:flex;
       flex-wrap:wrap;
       justify-content:center;
-      gap:20px;
-      margin-top:30px;
+      gap:25px;
     }
 
     .card{
       background:white;
-      width:250px;
+      width:260px;
       padding:20px;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(255,92,138,0.15);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
       border-radius:20px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom:15px;
+      height:220px;
+      object-fit:cover;
     }
 
     .card h3{
       color:#ff5c8a;
+      font-size:22px;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:#7a5a5a;
+      font-size:18px;
+      font-weight:500;
     }
 
     footer{
       background:#ffdce5;
       text-align:center;
-      padding:30px;
-      margin-top:50px;
+      padding:35px 20px;
+      margin-top:60px;
     }
+
+    footer h2{
+      color:#ff5c8a;
+      margin-bottom:10px;
+    }
+
+    footer p{
+      color:#7a5a5a;
+    }
+
   </style>
 </head>
 
@@ -99,6 +153,7 @@
 </header>
 
 <section class="hero">
+
   <h2>Mini vulcões feitos para você se apaixonar 🍰</h2>
 
   <p>
@@ -109,6 +164,7 @@
   <a class="botao" href="https://wa.me/5592992902595">
     Fazer Pedido
   </a>
+
 </section>
 
 <section class="sabores">
@@ -118,36 +174,65 @@
   <div class="cards">
 
     <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop">
+
       <h3>Cenoura com Brigadeiro</h3>
+
       <p>R$ 12,00</p>
+
     </div>
 
     <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+
       <h3>Chocolate com Brigadeiro</h3>
+
       <p>R$ 13,00</p>
+
     </div>
 
     <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop">
+
       <h3>Chocolate com Leite Ninho</h3>
+
       <p>R$ 14,00</p>
+
     </div>
 
     <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?q=80&w=1200&auto=format&fit=crop">
+
       <h3>Massa Branca com Brigadeiro</h3>
+
       <p>R$ 12,00</p>
+
     </div>
 
     <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop">
+
       <h3>Massa Branca com Leite Ninho</h3>
+
       <p>R$ 13,00</p>
+
     </div>
 
   </div>
+
 </section>
 
 <footer>
+
   <h2>@xandicake</h2>
+
   <p>WhatsApp: (92) 99290-2595</p>
+
 </footer>
 
 </body>
